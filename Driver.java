@@ -14,16 +14,16 @@ public class Driver {
 			System.out.println("1 is a root of s");
 		else
 			System.out.println("1 is not a root of s");
+		//multiply method test
 		Polynomial product = p1.multiply(p2);
-		
 		System.out.println(product);
+		//open file of polynomial
 		File file = new File("poly.txt");
-        	
-		Polynomial pFile = new Polynomial(file);
-        	System.out.println(pFile);
-
-        
-        	pFile.saveToFile("tbsaved.txt");
+        	//constructor test
+		Polynomial poly = new Polynomial(file);
+        	System.out.println(poly);
+		//save file test
+        	poly.saveToFile("tbsaved.txt");
         	System.out.println("saved file to tbsaved.txt");
 	}
 }
